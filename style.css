@@ -13,7 +13,6 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 .contentSize{
   display: flex;
   height: 600px;
@@ -39,7 +38,6 @@ body{
   padding-right: 16px;
   background-color: white;
 }
-
 .buttons{
   height: 380px;
   display: grid;
@@ -49,30 +47,35 @@ body{
 }
 button {
   cursor: pointer;
-  background-color: #D0FFBA;
+  background-color: #A6A6A6;
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.02);
   font-size: 20px;
   font-family: Optima, sans-serif;
-  color: rgb(0, 0, 0, 0.7);
   font-style: italic;
+  font-weight: 700;
 }
 button:hover{
   filter: brightness(97%);
   color: black;
-  font-weight: 700;
 }
 .top{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .top button {
-  background-color: #ADDEA6;
+  background-color: #404040;
 }
 .middle {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: 2 / 6;
+}
+.middle button{
+  color: black;
+}
+.middle button:hover{
+  color: white;
 }
 .rightSide{
   grid-column: 2;
@@ -80,16 +83,16 @@ button:hover{
   display: grid;
 }
 .rightSide button {
-  background-color: #C3F5C6;
+  background-color: #737373;
 }
 .buttonEqual {
   grid-row: 5;
   grid-column: 2;
-  background-color: #A6DEB3;
+  background-color: #404040;
   border-radius: 0 0 10px 0;
 }
 #zero{
   grid-column: span 2;
-  background-color: #BFFFD8;
+  background-color: #404040;
   border-radius: 0 0 0 10px;
 }
