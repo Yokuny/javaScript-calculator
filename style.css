@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contentSize{
+  display: flex;
+  height: 600px;
+  width: 300px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+}
+.contentDisplay{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.theDisplay{
+  display: flex;
+  border-radius: 10px 10px 0px 0px;
+  height: 230px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-family: Optima, sans-serif;
+  font-size: 60px;
+  padding-right: 16px;
+  background-color: white;
+}
+
+.buttons{
+  height: 380px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: repeat(5, 1fr);
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  background-color: #D0FFBA;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  font-size: 20px;
+  font-family: Optima, sans-serif;
+  color: rgb(0, 0, 0, 0.7);
+  font-style: italic;
+}
+button:hover{
+  filter: brightness(97%);
+  color: black;
+  font-weight: 700;
+}
+.top{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.top button {
+  background-color: #ADDEA6;
+}
+.middle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 2 / 6;
+}
+.rightSide{
+  grid-column: 2;
+  grid-row: span 4;
+  display: grid;
+}
+.rightSide button {
+  background-color: #C3F5C6;
+}
+.buttonEqual {
+  grid-row: 5;
+  grid-column: 2;
+  background-color: #A6DEB3;
+  border-radius: 0 0 10px 0;
+}
+#zero{
+  grid-column: span 2;
+  background-color: #BFFFD8;
+  border-radius: 0 0 0 10px;
+}
