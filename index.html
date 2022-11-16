@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-	<head>
+	<link>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Calculator</title>
+    <link rel="shortcut icon" href="calculator-solid.svg" type="image/x-icon">
 		<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	</head>
 	<body>
-
     <div class="contentSize">
       <div class="contentDisplay">
-        <div class="theDisplay"></div>
-        
+        <div id="secondDisplay"></div>
+        <div id="firstDisplay"></div>
         <div class="buttons">
           <div class="top">
-            <button id="buttonErase"><i style="height: 20px" class="fa-solid fa-arrow-left-long"></i></button>
-            <button id="buttonClear"><i style="height: 20px" class="fa-solid fa-broom"></i></button>
-            <button id="buttonPositiveNegative">+/-</button>
+            <button id="buttonErase"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button id="buttonClear"><i class="fa-solid fa-broom"></i></button>
+            <button id="buttonPositiveNegative"><i class="fa-solid fa-plus-minus"></i></button>
           </div>
           <div class="middle">
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="zero">0</button>
-            <button id="decimalPoint">.</button>
+            <button id="seven" onclick="firstDisplay(7)">7</button>
+            <button id="eight" onclick="firstDisplay(8)">8</button>
+            <button id="nine" onclick="firstDisplay(9)">9</button>
+            <button id="four" onclick="firstDisplay(4)">4</button>
+            <button id="five" onclick="firstDisplay(5)">5</button>
+            <button id="six" onclick="firstDisplay(6)">6</button>
+            <button id="one" onclick="firstDisplay(1)">1</button>
+            <button id="two" onclick="firstDisplay(2)">2</button>
+            <button id="three" onclick="firstDisplay(3)">3</button>
+            <button id="zero" onclick="firstDisplay(0)">0</button>
+            <button id="decimalPoint" onclick="firstDisplay('.')">.</button>
           </div>
           <div class="rightSide">
-            <button id="division">÷</button>
-            <button id="multiplication">×</button>
-            <button id="minus">-</button>
-            <button id="plus">+</button>
+            <button id="division" onclick="firstDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            <button id="multiplication" onclick="firstDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button id="minus" onclick="firstDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+            <button id="plus" onclick="firstDisplay('+')"><i class="fa-solid fa-plus"></i></button>
           </div>
-          <button class="buttonEqual">=</button>
+          <button id="buttonEqual"><i class="fa-solid fa-equals"></i></button>
         </div>
       </div>
     </div>
-
 	</body>
   <script src="script.js"></script>
 </html>
