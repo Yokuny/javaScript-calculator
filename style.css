@@ -38,6 +38,10 @@ body{
   font-size: 36px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+.typewritingDisplay{
+  display: grid;
+  grid-template-columns: 1.4fr 8fr;
+}
 #firstDisplay{
   display: flex;
   height: 70px;
@@ -46,8 +50,20 @@ body{
   font-family: Optima, sans-serif;
   font-size: 48px;
   padding-right: 16px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   padding-bottom: 10px;
+}
+#operatorDisplay{
+  display: flex;
+  height: 70px;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: Optima, sans-serif;
+  font-size: 48px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .buttons{
   height: 380px;

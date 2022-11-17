@@ -13,11 +13,14 @@
     <div class="contentSize">
       <div class="contentDisplay">
         <div id="secondDisplay"></div>
-        <div id="firstDisplay"></div>
+        <div class="typewritingDisplay">
+          <div id="operatorDisplay"></div>
+          <div id="firstDisplay"></div>
+        </div>
         <div class="buttons">
           <div class="top">
-            <button id="buttonErase"><i class="fa-solid fa-arrow-left-long"></i></button>
-            <button id="buttonClear"><i class="fa-solid fa-broom"></i></button>
+            <button id="buttonErase" onclick="eraseLastValue()"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button id="buttonClear" onclick="eraseMemory()"><i class="fa-solid fa-broom"></i></button>
             <button id="buttonPositiveNegative"><i class="fa-solid fa-plus-minus"></i></button>
           </div>
           <div class="middle">
