@@ -20,7 +20,7 @@
         <div class="buttons">
           <div class="top">
             <button id="buttonErase" onclick="eraseLastValue()"><i class="fa-solid fa-arrow-left-long"></i></button>
-            <button id="buttonClear" onclick="eraseMemory()"><i class="fa-solid fa-broom"></i></button>
+            <button id="buttonClear" onclick="eraseMemory(true)"><i class="fa-solid fa-broom"></i></button>
             <button id="buttonPositiveNegative"><i class="fa-solid fa-plus-minus"></i></button>
           </div>
           <div class="middle">
@@ -34,7 +34,7 @@
             <button id="two" onclick="firstDisplay(2)">2</button>
             <button id="three" onclick="firstDisplay(3)">3</button>
             <button id="zero" onclick="firstDisplay(0)">0</button>
-            <button id="decimalPoint" onclick="firstDisplay('.')">.</button>
+            <button id="decimalPoint" onclick="">.</button>
           </div>
           <div class="rightSide">
             <button id="division" onclick="firstDisplay('/')"><i class="fa-solid fa-divide"></i></button>
