@@ -15,10 +15,21 @@ function operate(){
     historyDisplay.textContent = `${secondValueSequence} ${operator} ${firstValueSequence}`;
 
     let equationResult = 0;
-    console.log(operator);
     switch (operator) {
         case "/":
             equationResult = parseFloat(secondValueSequence) / parseFloat(firstValueSequence);
+            typingDisplay.textContent = equationResult;
+            break;
+        case "*":
+            equationResult = parseFloat(secondValueSequence) * parseFloat(firstValueSequence);
+            typingDisplay.textContent = equationResult;
+            break;
+        case "-":
+            equationResult = parseFloat(secondValueSequence) - parseFloat(firstValueSequence);
+            typingDisplay.textContent = equationResult;
+            break;
+        case "+":
+            equationResult = parseFloat(secondValueSequence) + parseFloat(firstValueSequence);
             typingDisplay.textContent = equationResult;
             break;
         default:
@@ -43,15 +54,9 @@ function eraseLastValue(){
 
 
 function firstDisplay(value){
-    console.log(value);
-
-
     if(typeof(value) == 'string'){
-        console.log("processo de string");
-
-
         operator = value;
-        if(firstValueSequence.length != 0){
+        if(firstValueSequence.length != 0 && secondValueSequence){
             secondValueSequence = firstValueSequence.join('');
             historyDisplayRender();
             firstValueSequence.length = 0
@@ -59,11 +64,7 @@ function firstDisplay(value){
             operatorDisplay.textContent = value;
         }
     }else{
-        console.log("processo de valor");
-
         firstValueSequence.push(value);
         typingDisplay.textContent = firstValueSequence.join('');
     }
-    console.log(`valor 1ª: ${firstValueSequence.join('')} valor 2ª: ${secondValueSequence}`);
-
 }
