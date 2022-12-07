@@ -19,8 +19,8 @@
         </div>
         <div class="buttons">
           <div class="top">
-            <button id="buttonErase" onclick="eraseLastValue()"><i class="fa-solid fa-arrow-left-long"></i></button>
-            <button id="buttonClear" onclick="eraseMemory(true)"><i class="fa-solid fa-broom"></i></button>
+            <button id="buttonErase" onclick="core.eraseLastValue()"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button id="buttonClear" onclick="core.eraseMemory(true)"><i class="fa-solid fa-c"></i></button>
             <button id="buttonPositiveNegative"><i class="fa-solid fa-plus-minus"></i></button>
           </div>
           <div class="middle">
@@ -42,7 +42,7 @@
             <button id="minus" onclick="firstDisplay('-')"><i class="fa-solid fa-minus"></i></button>
             <button id="plus" onclick="firstDisplay('+')"><i class="fa-solid fa-plus"></i></button>
           </div>
-          <button id="buttonEqual" onclick="operate()"><i class="fa-solid fa-equals"></i></button>
+          <button id="buttonEqual" onclick="core.operate()"><i class="fa-solid fa-equals"></i></button>
         </div>
       </div>
     </div>
