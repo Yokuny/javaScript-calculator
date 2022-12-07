@@ -36,26 +36,35 @@ const core = (() => {
     firstValueSequence.pop();
     typingDisplay.textContent = firstValueSequence.join("");
   };
+  const sum = (a, b) => a + b;
+  const subtraction = (a, b) => a - b;
+  const multiplication = (a, b) => a * b;
+  const division = (a, b) => a / b;
   const operate = () => {
     historyDisplay.textContent = `${secondValueSequence} ${operator} ${firstValueSequence.join(
       ""
     )}`;
     switch (operator) {
       case "/":
-        equationResult =
-          secondValueSequence / parseInt(firstValueSequence.join(""));
+        equationResult = division(
+          secondValueSequence / parseInt(firstValueSequence.join(""))
+        );
         break;
       case "*":
-        equationResult =
-          secondValueSequence * parseInt(firstValueSequence.join(""));
+        equationResult = multiplication(
+          secondValueSequence * parseInt(firstValueSequence.join(""))
+        );
         break;
       case "-":
-        equationResult =
-          secondValueSequence - parseInt(firstValueSequence.join(""));
+        z;
+        equationResult = subtraction(
+          secondValueSequence - parseInt(firstValueSequence.join(""))
+        );
         break;
       case "+":
-        equationResult =
-          secondValueSequence + parseInt(firstValueSequence.join(""));
+        equationResult = sum(
+          secondValueSequence + parseInt(firstValueSequence.join(""))
+        );
         break;
       default:
         break;
